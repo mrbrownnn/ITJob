@@ -9,7 +9,9 @@ function CVStatistic() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    const fetchApi = async () => {
+    const fetchApi = async () => { // inport from cvService
+      // import { getListCV } from "../../services/cvService";
+      // import for getCookie
       const response = await getListCV(idCompany);
       if (response) {
         let obj = {

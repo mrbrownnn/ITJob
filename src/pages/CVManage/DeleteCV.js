@@ -16,7 +16,7 @@ function DeleteCV(props) {
         <Popconfirm title="Bạn có chắc muốn xóa?" onConfirm={handleDelete}>
           <Button
             className="ml-5"
-            danger
+            danger //define the button here is danger zone
             ghost
             icon={<DeleteOutlined />}
           ></Button>
